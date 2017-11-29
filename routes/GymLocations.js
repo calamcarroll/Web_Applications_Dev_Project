@@ -70,4 +70,29 @@ router.deleteGym = function (req, res) {
     });
 };
 
+router.updateGymInfo = function (req, res) {
+
+    Location.findById(req.params.id, function (err, location) {
+        if (err)
+            res.send(err);
+        else {
+            location.gymName = req.body.gymName;
+            location.MonthlyPrice = req.body.MonthlyPrice;
+            location.HalfYearPrice = req.body.HalfYearPrice;
+            location.FullYearPrice = req.body.FullYearPrice;
+            location.Longitude = req.body.Longitude;
+            location.Latitude = req.body.Latitude;
+            location.save(function (err) {
+                if (err) {
+                    res.status(404);
+                    res.json({message: 'Invalid Id!'});
+                }
+                else
+                    res.json({message: 'Gym has been updated', data: location});
+            });
+        }
+    });
+
+}
+
 module.exports = router;

@@ -29,24 +29,28 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 // app.use('/users', users);
 
+// All location endpoints
 app.get('/Location', GymLocations.getAllLocations);
 app.get('/Location/:id',GymLocations.findOneLocation);
 app.post('/Location',GymLocations.addGym);
 app.delete('/Location/:id',GymLocations.deleteGym);
+app.put('/Location/:id', GymLocations.updateGymInfo);
 
+//All diet endpoints
 app.get('/Diet',ClientDietPrograms.findAllDiets);
 app.get('/Diet/:id', ClientDietPrograms.findOneDiet);
 app.post('/Diet', ClientDietPrograms.addDiet);
 app.delete('/Diet/:id', ClientDietPrograms.deleteDiet);
 app.put('/Diet/:id', ClientDietPrograms.updateDietInfo);
 
-
+//All users endpoints
 app.get('/users',ClientUsers.getAllUsers );
 app.get('/users/:id', ClientUsers.findOneUser);
 app.post('/users', ClientUsers.addUser);
 app.delete('/users/:id', ClientUsers.deleteUser);
 app.put('/users/:id', ClientUsers.updateUserInfo);
 
+//All program endpoints
 app.get('/programs', ClientPrograms.findAllPrograms);
 app.get('/programs/:id', ClientPrograms.findOneProgram);
 app.get('/programs/:id/:MuscleType', ClientPrograms.findByType);

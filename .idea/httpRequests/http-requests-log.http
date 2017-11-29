@@ -1,3 +1,68 @@
+GET http://localhost:3000/Location/5a1f1751ce78941f8880b1a0
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T082942.200.json
+
+###
+
+PUT http://localhost:3000/Location/5a1f1751ce78941f8880b1a0
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{   "gymName": "Kingfisher",   "MonthlyPrice": 60,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
+
+<> 2017-11-29T082934.200.json
+
+###
+
+PUT http://localhost:3000/Location/5a1f1751ce78941f8880b1a0
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{   "gymName": "Kingfisher",   "MonthlyPrice": 60,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
+
+###
+
+GET http://localhost:3000/Location/5a1f1751ce78941f8880b1a0
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T082827.200.json
+
+###
+
+PUT http://localhost:3000/Location/5a1f1751ce78941f8880b1a0
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{   "gymName": "Kingfisher",   "MonthlyPrice": 60,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
+
+###
+
+PUT http://localhost:3000/Location/5a1f1751ce78941f8880b1a0
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{   "gymName": "Kingfisher",   "MonthlyPrice": 60,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
+
+###
+
+GET http://localhost:3000/Location/5a1f1751ce78941f8880b1a0
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T082729.200.json
+
+###
+
 POST http://localhost:3000/Location
 Accept:*/*
 Cache-Control:no-cache
@@ -406,83 +471,6 @@ Cache-Control:no-cache
 Content-Type:application/json
 
 <> 2017-11-29T070119.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "Protein": 200,   "Fats": 80,   "Carbs": 250, "numMeals": 6, "MealType": "Lunch", "MealCalories": 450, "MealTimes": 14.50 }
-
-<> 2017-11-29T070102.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "Protein": 200,   "Fats": 80,   "Carbs": 250, "numMeals": 6,  "Meals": [{ "Type":"Lunch", "Calories": 450 , "Time": 14.50}] }
-
-<> 2017-11-29T065710.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
-
-<> 2017-11-29T065402.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
-
-<> 2017-11-29T065339.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
-
-<> 2017-11-29T050448.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
-
-<> 2017-11-29T050344.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
-
-<> 2017-11-29T050317.200.json
 
 ###
 
