@@ -1,3 +1,21 @@
+GET http://localhost:3000/Location
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T080447.200.json
+
+###
+
+GET http://localhost:3000/Locations
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T080443.404.html
+
+###
+
 GET http://localhost:3000/Diet/5a1f03ee9ec7192718dd88b9
 Accept:*/*
 Cache-Control:no-cache
@@ -473,28 +491,6 @@ Content-Type:application/json
 {   "Meals": [{"Type":"Lunch","Calories": 450,"MealTime": 14.50}],"numMeals": 6,"Carbs": 350,"Fats": 150, "Protein":200 }
 
 <> 2017-11-29T042930.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
-
-<> 2017-11-29T042547.200.json
-
-###
-
-POST http://localhost:3000/Diet
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
-
-<> 2017-11-29T042148.200.json
 
 ###
 
