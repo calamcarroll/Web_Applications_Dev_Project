@@ -31,6 +31,8 @@ app.use('/', index);
 
 app.get('/Location', GymLocations.getAllLocations);
 app.get('/Location/:id',GymLocations.findOneLocation);
+app.post('/Location',GymLocations.addGym);
+app.delete('/Location/:id',GymLocations.deleteGym);
 
 app.get('/Diet',ClientDietPrograms.findAllDiets);
 app.get('/Diet/:id', ClientDietPrograms.findOneDiet);

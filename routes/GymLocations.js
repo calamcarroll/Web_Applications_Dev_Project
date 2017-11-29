@@ -38,4 +38,36 @@ router.findOneLocation = function (req, res) {
 
     });
 }
+
+router.addGym = function (req, res) {
+
+    var location = new Location();
+    location.gymName = req.body.gymName;
+    location.MonthlyPrice = req.body.MonthlyPrice;
+    location.HalfYearPrice = req.body.HalfYearPrice;
+    location.FullYearPrice = req.body.FullYearPrice;
+    location.Longitude = req.body.Longitude;
+    location.Latitude = req.body.Latitude;
+
+
+    location.save(function (err) {
+        if (err)
+            res.send(err);
+        else
+
+            res.json({message: 'Gym Added!', data: location});
+    });
+};
+
+router.deleteGym = function (req, res) {
+    Location.findByIdAndRemove(req.params.id, function (err) {
+        if (err) {
+            res.send(err);
+            res.status(404);
+            res.json({message: 'Gym not deleted'});
+        } else
+            res.json({message: 'Gym Deleted!'});
+    });
+};
+
 module.exports = router;
