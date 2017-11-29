@@ -57,6 +57,46 @@ router.addDiet = function (req, res) {
     });
 };
 
+router.deleteDiet = function (req, res) {
+    Diet.findByIdAndRemove(req.params.id, function (err) {
+        if (err) {
+            res.send(err);
+            res.status(404);
+            res.json({message: 'Diet not deleted'});
+        } else
+            res.json({message: 'Diet Deleted!'});
+    });
+};
+
+router.updateDietInfo = function (req, res) {
+
+    Diet.findById(req.params.id, function (err, diet) {
+        if (err)
+            res.send(err);
+        else {
+            diet.Protien = req.body.Protien;
+            diet.Fats = req.body.Fats;
+            diet.Carbs = req.body.Carbs;
+            diet.numMeals = req.body.numMeals;
+            diet.MealType = req.body.MealType;
+            diet.MealCalories = req.body.MealCalories;
+            diet.MealTime = req.body.MealTime;
+
+            diet.save(function (err) {
+                if (err) {
+                    res.status(404);
+                    res.json({message: 'Invalid diet Id!'});
+                }
+                else
+                    res.json({message: 'Diet has been updated', data: diet});
+            });
+        }
+    });
+
+}
+
+
+
 
 
 module.exports = router;

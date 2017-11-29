@@ -29,8 +29,10 @@ app.use('/', index);
 // app.use('/users', users);
 
 app.get('/Diet',ClientDietPrograms.findAllDiets);
-app.get('/Diet', ClientDietPrograms.findOneDiet);
+app.get('/Diet/:id', ClientDietPrograms.findOneDiet);
 app.post('/Diet', ClientDietPrograms.addDiet);
+app.delete('/Diet/:id', ClientDietPrograms.deleteDiet);
+app.put('/Diet/:id', ClientDietPrograms.updateDietInfo);
 
 
 app.get('/users',ClientUsers.getAllUsers );
