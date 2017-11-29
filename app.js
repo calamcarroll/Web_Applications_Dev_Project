@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var ClientPrograms = require("./routes/ClientPrograms");
 var ClientUsers = require("./routes/ClientUsers");
+var ClientDietPrograms = require("./routes/ClientDietPrograms");
 
 var app = express();
 
@@ -26,6 +27,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 // app.use('/users', users);
+
+app.get('/Diet',ClientDietPrograms.findAllDiets);
+app.get('/Diet', ClientDietPrograms.findOneDiet);
+app.post('/Diet', ClientDietPrograms.addDiet);
+
 
 app.get('/users',ClientUsers.getAllUsers );
 app.get('/users/:id', ClientUsers.findOneUser);

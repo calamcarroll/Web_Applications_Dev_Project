@@ -1,287 +1,528 @@
-GET http://localhost:3000/programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013431.200.json
+{   "Protein": 200,   "Fats": 80,   "Carbs": 250, "numMeals": 6, "MealType": "Lunch", "MealCalories": 450, "MealTime": 14.50 }
+
+<> 2017-11-29T070246.200.json
 
 ###
 
-POST http://localhost:3000/programs
+GET http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
- {"UserName": "calamc123","Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
-
-<> 2017-11-29T013427.200.json
+<> 2017-11-29T070119.200.json
 
 ###
 
-GET http://localhost:3000/programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013332.200.json
+{   "Protein": 200,   "Fats": 80,   "Carbs": 250, "numMeals": 6, "MealType": "Lunch", "MealCalories": 450, "MealTimes": 14.50 }
+
+<> 2017-11-29T070102.200.json
 
 ###
 
-POST http://localhost:3000/programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
- {"Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+{   "Protein": 200,   "Fats": 80,   "Carbs": 250, "numMeals": 6,  "Meals": [{ "Type":"Lunch", "Calories": 450 , "Time": 14.50}] }
 
-<> 2017-11-29T013328.200.json
+<> 2017-11-29T065710.200.json
 
 ###
 
-GET http://localhost:3000/programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013216.200.json
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
+
+<> 2017-11-29T065402.200.json
 
 ###
 
-GET http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013205.200.json
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
+
+<> 2017-11-29T065339.200.json
 
 ###
 
-GET http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013202.200.json
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
+
+<> 2017-11-29T050448.200.json
 
 ###
 
-GET http://localhost:3000/users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013141.200.json
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
+
+<> 2017-11-29T050344.200.json
 
 ###
 
-GET http://localhost:3000/users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013023.200.html
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
+
+<> 2017-11-29T050317.200.json
 
 ###
 
-GET http://localhost:3000/users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013022-1.200.html
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
+
+<> 2017-11-29T050243.200.json
 
 ###
 
-GET http://localhost:3000/users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T013022.200.html
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch"}] }
+
+<> 2017-11-29T050221.200.json
 
 ###
 
-GET http://localhost:3000/users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T012917.200.html
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T050139.200.json
 
 ###
 
-GET http://localhost:3000/Users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T012829.200.html
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T050100.200.json
 
 ###
 
-GET http://localhost:3000/Users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T012827.200.html
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T050053.200.json
 
 ###
 
-POST http://localhost:3000/Users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-{"hasGoneGym":5,"BodyFat":19.0,"Height":6.9,"Weight":112,"Email":"calamcarroll@gmail.com","lName":"Carroll","fName":"Calam", "UserName": "Calamc123"}
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.50   }] }
 
-<> 2017-11-29T012822.200.json
+<> 2017-11-29T044652.200.json
 
 ###
 
-GET http://localhost:3000/Users
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T012543.200.html
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T044430.500.html
 
 ###
 
-GET http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T010258.200.json
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T044341.500.html
 
 ###
 
-POST http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-{"Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs","UserName":"Calamc123"}
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.50   }] }
 
-<> 2017-11-29T010252.200.json
+<> 2017-11-29T043943.200.json
 
 ###
 
-POST http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-{"Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs","UserName":"Calamc123"}
+{   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "Meals": [{     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.50   }] }
 
-<> 2017-11-29T010140.200.json
+<> 2017-11-29T043857.200.json
 
 ###
 
-POST http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-{"UserName":"Calamc123","Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+{   "Type":"Lunch","Calories": 450,"MealTime": 14.50,"numMeals": 6,"Carbs": 350,"Fats": 150, "Protein":200 }
 
-<> 2017-11-29T010055.200.json
+<> 2017-11-29T043814.200.json
 
 ###
 
-GET http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T125937.200.json
+{   "Type":"Lunch","Calories": 450,"MealTime": 14.50,"numMeals": 6,"Carbs": 350,"Fats": 150, "Protein":200 }
+
+<> 2017-11-29T043620.500.html
 
 ###
 
-GET http://localhost:27017/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T125930.200.txt
+{   "Meals": [{"Type":"Lunch","Calories": 450,"MealTime": 14.50}],"numMeals": 6,"Carbs": 350,"Fats": 150, "Protein":200 }
+
+<> 2017-11-29T042930.200.json
 
 ###
 
-GET http://localhost:27017/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T125928.200.txt
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T042547.200.json
 
 ###
 
-GET http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T125810.200.json
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T042148.200.json
 
 ###
 
-POST http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-{"UserName":"Calamc123","Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
 
-<> 2017-11-29T125804.200.json
+<> 2017-11-29T041944.200.json
 
 ###
 
-GET http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T124929.200.json
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T041916.200.json
 
 ###
 
-POST http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-{"UserName":"Calamc123","Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
 
-<> 2017-11-29T124925.200.json
+<> 2017-11-29T041806.200.json
 
 ###
 
-GET http://localhost:3000/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-<> 2017-11-29T124656.200.json
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T041747.500.html
 
 ###
 
-GET http://localhost:8080/Programs
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
-###
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
 
-GET http://localhost:8080/Programs
-Accept:*/*
-Cache-Control:no-cache
+<> 2017-11-29T041717.500.html
 
 ###
 
-GET http://localhost:8080/resources
+POST http://localhost:3000/Diet
 Accept:*/*
 Cache-Control:no-cache
+Content-Type:application/json
+
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T041454.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{   "_id": "5a1edb83d791492da8e658f5",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [{     "Type":"Lunch",      "Calories": 450,     "MealTime": 14.50   }] }
+
+<> 2017-11-29T041343.200.json
+
+###
+
+GET http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T040949.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{ "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [   {"Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   }   ] }
+
+<> 2017-11-29T040835.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{ "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [   {"Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   }   ] }
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{ "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [   {"Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   }   ] }
+
+###
+
+GET http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T040719.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{ "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [   {"Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   }   ] }
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{ "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [   {"Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   }   ] }
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{ "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [   {"Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   }   ] }
+
+<> 2017-11-29T040629.200.json
+
+###
+
+GET http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T040543.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{ "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [   {"Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   }   ] }
+
+<> 2017-11-29T040534.200.json
+
+###
+
+GET http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T040121.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{ "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [   {"Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   }   ] }
+
+<> 2017-11-29T040116.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{   "_id": "5a1ed8480843d32dc46bd21e",   "numMeals": 6,   "Carbs": 350,   "Fats": 150,   "__v": 0,   "Meals": [     "Type":"Lunch",     "Calories": 450,     "MealTime": 14.30   ] }
+
+<> 2017-11-29T035900.400.html
+
+###
+
+GET http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T035538.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+ {"Protein": 200,"Fats":150,"Carbs":350,"numMeals":6,"Type":"Lunch","Calories":450,"MealTime":14.30}
+
+<> 2017-11-29T035530.200.json
+
+###
+
+GET http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T035453.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+ {"Protein": 200,"Fats":150,"Carbs":350,"numMeals":6,"Meals.Type":"Lunch","Meals.Calories":450,"Meals.MealTime":14.30}
+
+<> 2017-11-29T035448.200.json
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+ {"Protein": 200,"Fats":150,"Carbs":350,"numMeals":6,"Meals.Type":"Lunch","Meals.Calories":450,"Meals.MealTime":14.30}
+
+<> 2017-11-29T035428.500.html
+
+###
+
+POST http://localhost:3000/Diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+ {"Protein": 200,"Fats":150,"Carbs":350,"numMeals":6,"Meals.Type":"Lunch","Meals.Calories":450,"Meals.MealTime":14.30}
+
+<> 2017-11-29T035330.500.html
 
 ###
 

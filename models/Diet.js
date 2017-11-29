@@ -5,11 +5,9 @@ var DietSchema = new mongoose.Schema({
     Fats: Number,
     Carbs: Number,
     numMeals: Number,
-    Meals: [{
-        Type: String,
-        Calories: Number,
-        MealTime: Number
-    }]
+    MealType: String,
+    MealCalories: Number,
+    MealTime: Number
 });
 
 module.exports = mongoose.model('Diet', DietSchema);
