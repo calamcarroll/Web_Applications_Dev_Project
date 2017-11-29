@@ -1,0 +1,287 @@
+GET http://localhost:3000/programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013431.200.json
+
+###
+
+POST http://localhost:3000/programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+ {"UserName": "calamc123","Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+
+<> 2017-11-29T013427.200.json
+
+###
+
+GET http://localhost:3000/programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013332.200.json
+
+###
+
+POST http://localhost:3000/programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+ {"Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+
+<> 2017-11-29T013328.200.json
+
+###
+
+GET http://localhost:3000/programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013216.200.json
+
+###
+
+GET http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013205.200.json
+
+###
+
+GET http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013202.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013141.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013023.200.html
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013022-1.200.html
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T013022.200.html
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T012917.200.html
+
+###
+
+GET http://localhost:3000/Users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T012829.200.html
+
+###
+
+GET http://localhost:3000/Users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T012827.200.html
+
+###
+
+POST http://localhost:3000/Users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"hasGoneGym":5,"BodyFat":19.0,"Height":6.9,"Weight":112,"Email":"calamcarroll@gmail.com","lName":"Carroll","fName":"Calam", "UserName": "Calamc123"}
+
+<> 2017-11-29T012822.200.json
+
+###
+
+GET http://localhost:3000/Users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T012543.200.html
+
+###
+
+GET http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T010258.200.json
+
+###
+
+POST http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs","UserName":"Calamc123"}
+
+<> 2017-11-29T010252.200.json
+
+###
+
+POST http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs","UserName":"Calamc123"}
+
+<> 2017-11-29T010140.200.json
+
+###
+
+POST http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"UserName":"Calamc123","Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+
+<> 2017-11-29T010055.200.json
+
+###
+
+GET http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T125937.200.json
+
+###
+
+GET http://localhost:27017/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T125930.200.txt
+
+###
+
+GET http://localhost:27017/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T125928.200.txt
+
+###
+
+GET http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T125810.200.json
+
+###
+
+POST http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"UserName":"Calamc123","Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+
+<> 2017-11-29T125804.200.json
+
+###
+
+GET http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T124929.200.json
+
+###
+
+POST http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"UserName":"Calamc123","Weight":45,"RestTime":2,"Reps":15,"Sets":4,"ExerciseName":"Romanian dead","MuscleType":"Legs"}
+
+<> 2017-11-29T124925.200.json
+
+###
+
+GET http://localhost:3000/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-11-29T124656.200.json
+
+###
+
+GET http://localhost:8080/Programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+###
+
+GET http://localhost:8080/Programs
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
