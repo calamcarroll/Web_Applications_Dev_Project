@@ -9,8 +9,8 @@
 
     <script src="/javascripts/angularApp.js"></script>
     <script src="/javascripts/controllers/mainController.js"></script>
-    <script src="/javascripts/controllers/programcontroller.js"></script>
     <script src="/javascripts/controllers/programsController.js"></script>
+    <script src="/javascripts/controllers/addProgramsController.js"></script>
 </head>
 
 <body ng-controller="mainController">
@@ -23,15 +23,22 @@
         </div>
         <ul class="nav navbar-nav">
             <li><a href="#/"><i class="active"></i> Home</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#programs">Programs<span class="caret"></span></a>
+
+            <li class="dropdown"  uib-dropdown>
+                <a class="dropdown-toggle" data-toggle="dropdown"  href="#programs" uib-dropdown-toggle>Programs<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Create Programs</a></li>
-                    <li><a href="#">View Programs</a></li>
-                    <li><a href="#">Update Programs</a></li>
-                    <li><a href="#">Delete Programs</a></li>
+                    <li><a href="#createPrograms">Create Programs</a></li>
+                    <li><a href="#viewPrograms">View Programs</a></li>
+                    <li><a href="#updateProgram">Update Programs</a></li>
+                    <li><a href="#deleteProgram">Delete Programs</a></li>
                 </ul>
+
+
             </li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#diet">Diet<span class="caret"></span></a>
+            <li><a href="#addProgram"><i class="active"></i> Add Program</a></li>
+
+            <li class="dropdown" uib-dropdown>
+                <a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle href="#diet">Diet<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Create Diet</a></li>
                     <li><a href="#">View Diets</a></li>

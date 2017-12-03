@@ -16,18 +16,21 @@ app.config(function($routeProvider) {
             controller  : 'programsController'
         })
 
+        //route for the add programs page
+        .when('/addProgram', {
+            templateUrl : 'pages/addprogram.ejs',
+            controller  : 'addProgramsController'
+        })
 
-        // route for the donate page
+
+        // route for the diet page
         .when('/diet', {
             templateUrl : 'pages/diet.ejs',
             controller  : 'dietController'
-        })
-
-        // route for the donations page
-        .when('/donations', {
-            templateUrl : 'pages/donations.ejs',
-            controller  : 'donationsController'
         });
+
+        // route for the add programs page
+
 });
 
 

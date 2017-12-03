@@ -27,6 +27,9 @@ app.controller('programsController', ['$scope','$http', function($scope, $http) 
                 console.log('Error: ' + data);
             });
     }
+    $scope.updateProgram = function () {
+
+    }
 
     $scope.delete = function(id) {
         if (confirm("Are you sure you want to delete this program?")) {

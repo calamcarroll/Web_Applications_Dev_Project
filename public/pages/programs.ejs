@@ -5,15 +5,15 @@
 
     <div ng-controller="programsController as list">
         <table align="center" valign="middle">
-            <tbody ng-repeat="program in programs | orderBy:'-weight'">
+            <tbody ng-repeat="program in programs | orderBy:'weight'">
             <tr style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign ="middle"; >
             <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Sets</th>
-                <th>Reps</th>
-                <th>Rest</th>
-                <th>Weight</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Name</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Type</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Sets</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Reps</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Rest</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Weight</th>
             </tr>
 
             <td>
@@ -42,7 +42,19 @@
                 <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
 
 
-                <button type="button" class="btn btn-default" ng-click="delete(program.id)">
+
+
+
+
+
+
+
+
+
+
+
+
+                <button type="button" class="btn btn-default" ng-click="delete(program._id)">
                     <span class="glyphicon glyphicon-remove"></span> Remove
                 </button>
                 <button type="button" class="btn btn-default" ng-click="update(program)">
