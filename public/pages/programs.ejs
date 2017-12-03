@@ -31,10 +31,10 @@
                 <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Reps}}</span>
             </td>
             <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.RestTime}}</span>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.RestTime}} sec </span>
             </td>
             <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Weight}}</span>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Weight}} kg</span>
             </td>
 
             <td>
@@ -57,7 +57,9 @@
                 <button type="button" class="btn btn-default" ng-click="delete(program._id)">
                     <span class="glyphicon glyphicon-remove"></span> Remove
                 </button>
-                <button type="button" class="btn btn-default" ng-click="update(program)">
+                <button type="button" class="btn btn-default" ng-click="changeRoute('/updateProgram')">
+
+
                     <span class="glyphicon glyphicon-edit"></span> Edit
                 </button>
                 </span>

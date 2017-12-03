@@ -21,6 +21,10 @@ app.config(function($routeProvider) {
             templateUrl : 'pages/addprogram.ejs',
             controller  : 'addProgramsController'
         })
+        .when('/updateProgram', {
+            templateUrl : 'pages/updateProgram.ejs',
+            controller  : 'programsController'
+        })
 
 
         // route for the diet page
