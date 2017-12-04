@@ -1,5 +1,19 @@
 var app = angular.module('SculptureFitness', ['ngRoute']);
 
+app.service('myService', function(){
+    var myService = {
+        MuscleType0: '',
+        ExerciseName0: '',
+        Sets0: 0,
+        Reps0: 0,
+        RestTime0: 0,
+        Weight0:0,
+        identity0:""
+    }
+    return myService;
+})
+
+
 app.config(function($routeProvider) {
     $routeProvider
 
@@ -23,7 +37,11 @@ app.config(function($routeProvider) {
         })
         .when('/updateProgram', {
             templateUrl : 'pages/updateProgram.ejs',
-            controller  : 'programsController'
+            controller  : 'updateController'
+        })
+        .when('/findGym', {
+            templateUrl : 'pages/findGym.ejs',
+            controller  : 'findGymController'
         })
 
 

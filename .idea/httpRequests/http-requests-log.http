@@ -3,6 +3,15 @@ Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json
 
+<> 2017-12-04T020452.200.json
+
+###
+
+GET http://localhost:3000/programs
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
 <> 2017-12-03T040636.200.json
 
 ###
@@ -460,15 +469,6 @@ Cache-Control:no-cache
 Content-Type:application/json
 
 {   "Protein": 200,   "Fats": 80,   "Carbs": 250, "numMeals": 6, "MealType": "Dinner", "MealCalories": 450, "MealTime": 14.50 }
-
-###
-
-GET http://localhost:3000/Diet/5a1f03ee9ec7192718dd88b9
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T072203.200.json
 
 ###
 
