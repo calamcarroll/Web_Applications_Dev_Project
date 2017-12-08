@@ -11,7 +11,20 @@ app.service('myService', function(){
         identity0:""
     }
     return myService;
-})
+});
+app.service('myOtherService', function(){
+    var myOtherService = {
+        Protein1: 0,
+        Fats1: 0,
+        Carbs1: 0,
+        numMeals1: 0,
+        MealType1: '',
+        MealCalories1:0,
+        MealTime1:0,
+        identity1: 0
+    }
+    return myOtherService;
+});
 
 
 app.config(function($routeProvider) {
@@ -22,7 +35,6 @@ app.config(function($routeProvider) {
             templateUrl : 'pages/home.ejs',
             controller  : 'mainController'
         })
-
 
         // route for the programs page
         .when('/programs', {
@@ -46,6 +58,10 @@ app.config(function($routeProvider) {
         .when('/addDiet', {
             templateUrl : 'pages/addDiet.ejs',
             controller  : 'addDietController'
+        })
+        .when('/updateDiet', {
+            templateUrl : 'pages/updateDiet.ejs',
+            controller  : 'updateDietController'
         })
 
         // route for the diet page

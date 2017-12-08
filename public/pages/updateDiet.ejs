@@ -1,5 +1,5 @@
 <div class="jumbotron text-center">
-    <h1>Time to update a program</h1>
+    <h1>Time to update a Diet</h1>
 
 
     <div ng-controller="updateDietController">
@@ -66,6 +66,7 @@
                                placeholder="Meal Time"
                                ng-model="formData.MealTime"
                                ng-style="{'width': 500 + 'px'}"
+                               step=".02"
                                required="true">
                     </div>
                     <button type="button" class="btn btn-default" ng-click="updateDiet()">

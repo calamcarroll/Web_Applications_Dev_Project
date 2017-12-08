@@ -45,7 +45,7 @@ app.controller('programsController', ['$scope','$http', '$location', 'myService'
         myService.RestTime0 = program_from_page.RestTime;
         myService.identity0 = program_from_page._id;
 
-        
+
         $location.path('/updateProgram')
 
     };

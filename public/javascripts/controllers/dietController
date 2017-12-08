@@ -1,6 +1,6 @@
 var app = angular.module('SculptureFitness');
 
-app.controller('dietController', ['$scope','$http', '$location', 'myService', function($scope, $http, $location, myService) {
+app.controller('dietController', ['$scope','$http', '$location', 'myOtherService', function($scope, $http, $location, myOtherService) {
     // create a message to display in our view
     $scope.message = 'Diets Page!';
 
@@ -21,6 +21,24 @@ app.controller('dietController', ['$scope','$http', '$location', 'myService', fu
             .error(function (data) {
                 console.log('Error: ' + data);
             });
+    };
+
+    $scope.update = function (diets_from_page) {
+
+
+
+        myOtherService.Protein1 = diets_from_page.Protein;
+        myOtherService.Fats1 = diets_from_page.Fats;
+        myOtherService.Carbs1 = diets_from_page.Carbs;
+        myOtherService.numMeals1 = diets_from_page.numMeals;
+        myOtherService.MealType1 = diets_from_page.MealType;
+        myOtherService.MealCalories1 = diets_from_page.MealCalories;
+        myOtherService.MealTime1 = diets_from_page.MealTime;
+        myOtherService.identity1 = diets_from_page._id;
+
+
+        $location.path('/updateDiet')
+
     };
 
     $scope.delete = function(id) {
