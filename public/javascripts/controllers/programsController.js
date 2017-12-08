@@ -45,37 +45,9 @@ app.controller('programsController', ['$scope','$http', '$location', 'myService'
         myService.RestTime0 = program_from_page.RestTime;
         myService.identity0 = program_from_page._id;
 
-
-        //console.log("myObject: "+myService.myObject);
-
-        //console.log("myService.ExerciseName0: "+myService.ExerciseName0);
-
+        
         $location.path('/updateProgram')
 
-
-
-        //console.log("myObject.ExerciseName0: "+myService.myObject.ExerciseName0);
-
-
-        /*
-        $http.put('/programs/' + id, $scope.formData)
-            .success(function (data) {
-                $scope.Programs = data;
-
-                console.log('$scope.MuscleType: '+$scope.MuscleType);
-
-                myService.myObject.MuscleType0 = $scope.programs.MuscleType;
-
-                console.log("myObject.MuscleTyep0: "+myService.myObject.MuscleType0);
-
-                $location.path('/updateProgram');
-                console.log(data);
-                findAll();
-            })
-            .error(function (data) {
-                console.log('Error: ' + data);
-            });
-            */
     };
 
     $scope.delete = function(id) {

@@ -1,31 +1,29 @@
 var app = angular.module('SculptureFitness');
 
-app.controller('updateController', ['$scope','$http', '$location','myService', function($scope, $http, $location, myService) {
+app.controller('updateDietController', ['$scope','$http', '$location','Service', function($scope, $http, $location, Service) {
     // create a message to display in our view
-    $scope.message = 'Programs Page!'
+    $scope.message = 'Diet Page!'
 
-    console.log("adsfasd myService.MuscleType0: "+myService.MuscleType0);
 
     $scope.formData = {};
-    $scope.formData.MuscleType = myService.MuscleType0;
-    $scope.formData.ExerciseName = myService.ExerciseName0;
-    $scope.formData.Sets = myService.Sets0;
-    $scope.formData.Reps = myService.Reps0;
-    $scope.formData.Weight = myService.Weight0;
-    $scope.formData.RestTime = myService.RestTime0;
+    $scope.formData.Protein = Service.Protein;
+    $scope.formData.Fats = Service.Fats;
+    $scope.formData.Carbs = Service.Carbs;
+    $scope.formData.numMeals = Service.numMeals;
+    $scope.formData.MealType = Service.MealType;
+    $scope.formData.MealCalories = Service.MealCalories;
+    $scope.formData.MealTime = Service.MealTime;
 
 
-
-
-    $scope.update = function () {
+    $scope.updateDiet = function () {
 
         //console.log("id from update page: "+id);
 
-        $http.put('/programs/' + myService.identity0, $scope.formData)
+        $http.put('/diet/' + Service.identity0, $scope.formData)
             .success(function (data) {
                 //$scope.Programs = data;
 
-                $location.path('/programs');
+                $location.path('/diets');
                 console.log(data);
                 findAll();
             })
@@ -33,7 +31,6 @@ app.controller('updateController', ['$scope','$http', '$location','myService', f
                 console.log('Error: ' + data);
             });
     };
-
 
     $scope.delete = function(id) {
         if (confirm("Are you sure you want to delete this program?")) {

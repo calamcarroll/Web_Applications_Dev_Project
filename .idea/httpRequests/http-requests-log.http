@@ -1,3 +1,41 @@
+GET http://localhost:3000/diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-07T051309.200.json
+
+###
+
+GET http://localhost:3000/diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-07T051241.200.json
+
+###
+
+POST http://localhost:3000/diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Protein": 200,"Fats": 120, "Carbs": 250, "numMeals": 5, "MealType": "Lunch", "MealCalories": 465, "MealTime": 15.30}
+
+<> 2017-12-07T051237.200.json
+
+###
+
+GET http://localhost:3000/diet
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-07T050804.200.json
+
+###
+
 GET http://localhost:3000/programs
 Accept:*/*
 Cache-Control:no-cache
@@ -431,44 +469,6 @@ Cache-Control:no-cache
 Content-Type:application/json
 
 <> 2017-11-29T080447.200.json
-
-###
-
-GET http://localhost:3000/Locations
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T080443.404.html
-
-###
-
-GET http://localhost:3000/Diet/5a1f03ee9ec7192718dd88b9
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T072605.200.json
-
-###
-
-PUT http://localhost:3000/Diet/5a1f03ee9ec7192718dd88b9
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "Protein": 200,   "Fats": 80,   "Carbs": 250, "numMeals": 6, "MealType": "Dinner", "MealCalories": 450, "MealTime": 14.50 }
-
-<> 2017-11-29T072557.200.json
-
-###
-
-PUT http://localhost:3000/Diet/5a1f03ee9ec7192718dd88b9
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "Protein": 200,   "Fats": 80,   "Carbs": 250, "numMeals": 6, "MealType": "Dinner", "MealCalories": 450, "MealTime": 14.50 }
 
 ###
 

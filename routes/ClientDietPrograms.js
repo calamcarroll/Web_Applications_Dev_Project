@@ -40,7 +40,7 @@ router.findOneDiet = function (req, res) {
 router.addDiet = function (req, res) {
 
     var diet = new Diet();
-    diet.Protien = req.body.Protien;
+    diet.Protein = req.body.Protein;
     diet.Fats = req.body.Fats;
     diet.Carbs = req.body.Carbs;
     diet.numMeals = req.body.numMeals;
@@ -74,7 +74,7 @@ router.updateDietInfo = function (req, res) {
         if (err)
             res.send(err);
         else {
-            diet.Protien = req.body.Protien;
+            diet.Protein = req.body.Protein;
             diet.Fats = req.body.Fats;
             diet.Carbs = req.body.Carbs;
             diet.numMeals = req.body.numMeals;

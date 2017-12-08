@@ -5,28 +5,66 @@
 
     <div ng-controller="dietController as list">
         <table align="center" valign="middle">
-            <tbody ng-repeat="program in programs">
-            <tr style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle"; >
+            <tbody ng-repeat="diet in diet | orderBy:'numMeals'">
+            <tr style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign ="middle"; >
+            <tr>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Protein</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Fats</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Carbs</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>numMeals</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>MealType</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>MealCalories</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>MealTime</th>
+            </tr>
+
             <td>
-                <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(donation._id)"></span>
-                {{donation.upvotes}}
+
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Protein}}</span>
+            </td>
+
+            <td>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Fats}}</span>
             </td>
             <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{donation.paymenttype}}</span>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Carbs}}</span>
             </td>
             <td>
-                <span class="glyphicon glyphicon-euro"></span>
-                {{donation.amount}}
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.numMeals}}</span>
             </td>
+            <td>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.MealType}}</span>
+            </td>
+            <td>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.MealCalories}}</span>
+            </td>
+
+            <td>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.MealTime}}</span>
+            </td>
+
             <td>
 
                 <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
 
 
-                <button type="button" class="btn btn-default" ng-click="delete(donation._id)">
+
+
+
+
+
+
+
+
+
+
+
+
+                <button type="button" class="btn btn-default" ng-click="delete(diet._id)">
                     <span class="glyphicon glyphicon-remove"></span> Remove
                 </button>
-                <button type="button" class="btn btn-default" ng-click="update(donation)">
+                <button type="button" class="btn btn-default" ng-click="updateDiet(diet)">
+
+
                     <span class="glyphicon glyphicon-edit"></span> Edit
                 </button>
                 </span>

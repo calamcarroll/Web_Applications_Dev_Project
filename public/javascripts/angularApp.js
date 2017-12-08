@@ -43,7 +43,10 @@ app.config(function($routeProvider) {
             templateUrl : 'pages/findGym.ejs',
             controller  : 'findGymController'
         })
-
+        .when('/addDiet', {
+            templateUrl : 'pages/addDiet.ejs',
+            controller  : 'addDietController'
+        })
 
         // route for the diet page
         .when('/diet', {

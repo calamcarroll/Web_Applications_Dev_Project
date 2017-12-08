@@ -1,6 +1,40 @@
-<div; class="jumbotron text-center">
-    <h1>List; All; Diets</h1>
+var app = angular.module('SculptureFitness');
 
-<p>{;{ message }}</p>
+app.controller('dietController', ['$scope','$http', '$location', 'myService', function($scope, $http, $location, myService) {
+    // create a message to display in our view
+    $scope.message = 'Diets Page!';
 
-</div>;
+    findAll();
+    $scope.changeRoute = function(newRoute){
+
+        $location.path(newRoute);
+
+    };
+
+
+    function findAll() {
+        $http.get('/diet')
+            .success(function (data) {
+                $scope.diet = data;
+                console.log(data);
+            })
+            .error(function (data) {
+                console.log('Error: ' + data);
+            });
+    };
+
+    $scope.delete = function(id) {
+        if (confirm("Are you sure you want to delete this diet?")) {
+            console.log('Deleting id : ' + id);
+            $http.delete('/diet/' + id)
+                .success(function(data) {
+                    console.log(data);
+                    findAll();
+                })
+                .error(function(data) {
+                    console.log('Error: ' + data);
+                });
+        }
+    };
+}
+]);
