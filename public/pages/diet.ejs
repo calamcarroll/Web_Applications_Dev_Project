@@ -4,8 +4,8 @@
     <p>{{ message }}</p>
 
     <div ng-controller="dietController as list">
-        <table align="center" valign="middle">
-            <tbody ng-repeat="diet in diet | orderBy:'numMeals'">
+        <table align="center" valign="middle" class="table table-hover">
+            <thead>
             <tr style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign ="middle"; >
             <tr>
                 <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Protein</th>
@@ -16,6 +16,10 @@
                 <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>MealCalories</th>
                 <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>MealTime</th>
             </tr>
+            </thead>
+            <tbody ng-repeat="diet in diet | orderBy:'numMeals'">
+
+
 
             <td>
 

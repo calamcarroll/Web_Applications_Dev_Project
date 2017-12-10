@@ -1,3 +1,12 @@
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T031105.200.json
+
+###
+
 GET http://localhost:3000/diet
 Accept:*/*
 Cache-Control:no-cache
@@ -460,15 +469,6 @@ Cache-Control:no-cache
 Content-Type:application/json
 
 <> 2017-11-29T081835.200.json
-
-###
-
-GET http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T080447.200.json
 
 ###
 

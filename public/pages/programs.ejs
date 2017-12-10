@@ -5,67 +5,63 @@
 
     <div ng-controller="programsController as list">
         <table align="center" valign="middle">
-            <tbody ng-repeat="program in programs | orderBy:'weight'">
-            <tr style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign ="middle"; >
-            <tr>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Name</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Type</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Sets</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Reps</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Rest</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Weight</th>
-            </tr>
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <table class="table table-bordered table-striped">
 
-            <td>
+                <thead>
+                <tr>
+                    <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Name</th>
+                    <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Type</th>
+                    <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Sets</th>
+                    <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Reps</th>
+                    <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Rest</th>
+                    <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Weight</th>
+                </tr>
+                </thead>
+                <tbody id="myTable">
 
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.ExerciseName}}</span>
-            </td>
+                <tbody ng-repeat="program in programs | orderBy:'weight'">
+                <td>
 
-            <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.MuscleType}}</span>
-            </td>
-            <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Sets}}</span>
-            </td>
-            <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Reps}}</span>
-            </td>
-            <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.RestTime}} sec </span>
-            </td>
-            <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Weight}} kg</span>
-            </td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.ExerciseName}}</span>
+                </td>
 
-            <td>
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.MuscleType}}</span>
+                </td>
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Sets}}</span>
+                </td>
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Reps}}</span>
+                </td>
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.RestTime}} sec </span>
+                </td>
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Weight}} kg</span>
+                </td>
 
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
+                <td>
 
-
-
-
-
-
-
-
+                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
 
 
+                    <button type="button" class="btn btn-default" ng-click="delete(program._id)">
+                        <span class="glyphicon glyphicon-remove"></span> Remove
+                    </button>
+                    <button type="button" class="btn btn-default" ng-click="update(program)">
 
 
+                        <span class="glyphicon glyphicon-edit"></span> Edit
+                    </button>
+                    </span>
+                </td>
+                </tr>
+                </tbody>
+            </table>
 
 
-                <button type="button" class="btn btn-default" ng-click="delete(program._id)">
-                    <span class="glyphicon glyphicon-remove"></span> Remove
-                </button>
-                <button type="button" class="btn btn-default" ng-click="update(program)">
-
-
-                    <span class="glyphicon glyphicon-edit"></span> Edit
-                </button>
-                </span>
-            </td>
-            </tr>
-            </tbody>
-        </table>
     </div>
 </div>

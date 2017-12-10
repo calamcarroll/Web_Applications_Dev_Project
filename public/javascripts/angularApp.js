@@ -63,6 +63,14 @@ app.config(function($routeProvider) {
             templateUrl : 'pages/updateDiet.ejs',
             controller  : 'updateDietController'
         })
+        .when('/Register',{
+            templateUrl : 'pages/Register.ejs',
+            controller : 'registerController'
+        })
+        .when('/Login',{
+            templateUrl : 'pages/Login.ejs',
+            controller : 'loginController'
+        })
 
         // route for the diet page
         .when('/diet', {

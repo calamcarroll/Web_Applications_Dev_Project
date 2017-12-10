@@ -1,0 +1,136 @@
+<div class="jumbotron text-center">
+
+
+    <div ng-controller="registerController">
+        <style>
+            #success_message{ display: none;}
+        </style>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+        <form ng-submit="addUser()">
+
+                <h2><b>Registration Form</b></h2>
+
+                <div class="form-group" align="center">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input  type="text"
+                                    name="user_name"
+                                    placeholder="Username"
+                                    ng-model="formData.Username"
+                                    class="form-control"
+                                    required = "true">
+                             </div>
+                       </div>
+
+
+
+                <div class="form-group" align="center">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input  name="first_name"
+                                    placeholder="First Name"
+                                    ng-model="formData.fName"
+                                    class="form-control"
+                                    type="text"
+                                    required ="true">
+                        </div>
+                    </div>
+
+
+
+                <div class="form-group" align="center">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="last_name"
+                                   placeholder="Last Name"
+                                   ng-model="formData.lName"
+                                   class="form-control"
+                                   type="text"
+                                   required="true">
+                        </div>
+                    </div>
+
+
+                <div class="form-group" align="center">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email"
+                                   placeholder="E-Mail Address"
+                                   ng-model="formData.Email"
+                                   class="form-control"
+                                   type="text"
+                                   required="true">
+                       </div>
+                    </div>
+
+                <div class="form-group" align="center">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="user_password"
+                                   placeholder="Password"
+                                   ng-model="formData.Password"
+                                   class="form-control"
+                                   type="password">
+                        </div>
+                    </div>
+
+
+                <div class="form-group" align="center">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input  name="Weight"
+                                    placeholder="Weight"
+                                    ng-model="formData.Weight"
+                                    class="form-control"
+                                    type="text">
+                        </div>
+                    </div>
+
+
+                <div class="form-group" align="center">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input  name="Height"
+                                    placeholder="Height"
+                                    ng-model="formData.Height"
+                                    class="form-control"
+                                    type="text">
+                        </div>
+                    </div>
+
+
+                <div class="form-group" align="center">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input  name="Body Fat" placeholder="Body Fat" ng-model="formData.BodyFat" class="form-control"  type="text">
+                        </div>
+                    </div>
+
+
+                <!-- Success message -->
+                <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4"><br>
+                        <button type="submit" class="btn btn-warning" ng-click="addUser()">Register <span class="glyphicon glyphicon-send"></span></button>
+
+                    </div>
+                </div>
+
+
+        </form>
+    </div>
+  </div>
+</div>

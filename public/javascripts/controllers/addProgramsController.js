@@ -7,7 +7,7 @@ app.controller('addProgramsController', ['$scope', '$location', '$http', functio
     $scope.message = 'Programs Page';
 
     $scope.addProgram = function () {
-        // $scope.formData.paymenttype = $scope.formData.paymentOptions.name;
+
         $http.post('/programs', $scope.formData)
             .success(function (data) {
                 $scope.Programs = data;
