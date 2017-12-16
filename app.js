@@ -11,8 +11,11 @@ var ClientPrograms = require("./routes/ClientPrograms");
 var ClientUsers = require("./routes/ClientUsers");
 var ClientDietPrograms = require("./routes/ClientDietPrograms");
 var GymLocations = require("./routes/GymLocations");
-
+var passport = require('passport')
 var app = express();
+var social = require('./passport/passport')(app,passport);
+
+
 
 
 
@@ -47,7 +50,7 @@ app.put('/Diet/:id', ClientDietPrograms.updateDietInfo);
 
 //All users endpoints
 app.get('/users',ClientUsers.getAllUsers );
-app.get('/users/:id', ClientUsers.findOneUser);
+app.post('/users', ClientUsers.findOneUser);
 app.post('/users', ClientUsers.addUser);
 app.delete('/users/:id', ClientUsers.deleteUser);
 app.put('/users/:id', ClientUsers.updateUserInfo);

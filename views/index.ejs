@@ -1,21 +1,17 @@
-<html ng-app="SculptureFitness" >
+<html ng-app="SculptureFitness">
 <head>
     <title>SculptureFitness</title>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css"/>
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-route.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-
+    <!--Google maps Api key here -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzoWVJ7tsPNeXmqVnUtPkcEJJUb70F02g&callback=initMap"></script>-->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <meta name="google-signin-client_id" content="278471159754-kijuvn7d6n51j13k47a9tjmgerf7ukmp.apps.googleusercontent.com.apps.googleusercontent.com">
-
 
 
     <script src="/javascripts/angularApp.js"></script>
@@ -43,10 +39,11 @@
             <a class="navbar-brand" href="#/">Sculpture Fitness</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="#/"><i class="active"></i> Home</a></li>
 
-            <li class="dropdown"  uib-dropdown>
-                <a class="dropdown-toggle" data-toggle="dropdown"  href="#programs" uib-dropdown-toggle>Programs<span class="caret"></span></a>
+
+            <li class="dropdown" uib-dropdown>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#programs" uib-dropdown-toggle>Programs<span
+                            class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="#addProgram">Create Programs</a></li>
                 </ul>
@@ -56,7 +53,8 @@
             <!--<li><a href="#addProgram"><i class="active"></i> Add Program</a></li>-->
 
             <li class="dropdown" uib-dropdown>
-                <a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle href="#diet">Diet<span class="caret"></span></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle href="#diet">Diet<span
+                            class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="#addDiet">Create Diet</a></li>
                 </ul>
@@ -71,16 +69,8 @@
 </nav>
 
 
-
-
-
-
-
-
 <!-- MAIN CONTENT AND INJECTED VIEWS -->
 <div id="main">
-
-
 
 
     <div ng-view></div>

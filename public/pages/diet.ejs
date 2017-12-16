@@ -3,7 +3,7 @@
 
     <p>{{ message }}</p>
 
-    <div ng-controller="dietController as list">
+    <div ng-controller="dietController as list" id="diets">
         <table align="center" valign="middle" class="table table-hover">
             <thead>
             <tr style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign ="middle"; >
@@ -11,10 +11,10 @@
                 <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Protein</th>
                 <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Fats</th>
                 <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Carbs</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>numMeals</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>MealType</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>MealCalories</th>
-                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>MealTime</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Meal Number</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Meal Type</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Meal Calories</th>
+                <th><span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>Meal Time</th>
             </tr>
             </thead>
             <tbody ng-repeat="diet in diet | orderBy:'numMeals'">
@@ -23,14 +23,14 @@
 
             <td>
 
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Protein}}</span>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Protein}} grams</span>
             </td>
 
             <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Fats}}</span>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Fats}} grams</span>
             </td>
             <td>
-                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Carbs}}</span>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.Carbs}} grams</span>
             </td>
             <td>
                 <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{diet.numMeals}}</span>

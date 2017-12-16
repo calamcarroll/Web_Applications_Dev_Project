@@ -1,9 +1,26 @@
 <div class="jumbotron text-center">
+    <div ng-controller="findGymController">
+
+        <style>
+            #map {
+                width: 100%;
+                height: 400px;
+                background-color: grey;
+            }
+
+        </style>
 
 
-    <h1>List All Gyms here</h1>
+        <p>{{ message }}</p>
+        <h1>List All Gyms here</h1>
+        <div id="map">
 
-    <p>{{ message }}</p>
 
+        </div>
+        <script defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzoWVJ7tsPNeXmqVnUtPkcEJJUb70F02g&callback=initMap">
+        </script>
+
+    </div>
 
 </div>

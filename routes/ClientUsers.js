@@ -32,7 +32,8 @@ router.getAllUsers = function (req, res) {
 
 
 router.findOneUser = function (req, res) {
-
+         var username = req.body.username;
+         var password = req.body.password
     User.find({"_id": req.params.id}, function (err, Users) {
         if (err)
             res.json({message: 'User NOT Found!', errmsg: err});

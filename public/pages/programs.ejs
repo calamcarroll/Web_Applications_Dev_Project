@@ -5,7 +5,7 @@
 
     <div ng-controller="programsController as list">
         <table align="center" valign="middle">
-            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <input class="form-control" id="myInput" type="text" ng-model="test" placeholder="Search..">
             <br>
             <table class="table table-bordered table-striped">
 
@@ -21,7 +21,7 @@
                 </thead>
                 <tbody id="myTable">
 
-                <tbody ng-repeat="program in programs | orderBy:'weight'">
+                <tbody ng-repeat="program in programs | filter:test">
                 <td>
 
                     <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.ExerciseName}}</span>
@@ -61,6 +61,7 @@
                 </tr>
                 </tbody>
             </table>
+
 
 
     </div>
