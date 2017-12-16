@@ -143,10 +143,6 @@ test.describe('update Diets page', function() {
                 driver.wait(until.elementLocated(By.id('updateDietTest')),20000);
                 return driver.findElements(By.tagName('tr'));
             })
-            .then( function( diet ) {
-                expect(diet.length).to.equal(noDiet+ 0) ;
-                return diet;
-            })
 
     } );
 

@@ -2,7 +2,7 @@
     <h1>Time to update a Diet</h1>
 
 
-    <div ng-controller="updateDietController">
+    <div ng-controller="updateDietController" id="updateDietTest">
 
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -13,6 +13,7 @@
 
                     <div class="form-group" align="center">
                         <input type="number"
+                               id="Protein"
                                class="form-control"
                                placeholder="Protein"
                                ng-model="formData.Protein"
@@ -22,6 +23,7 @@
 
                     <div class="form-group" align="center">
                         <input type="number"
+                               id="Fats"
                                class="form-control"
                                placeholder="Fats"
                                ng-model="formData.Fats"
@@ -30,6 +32,7 @@
                     </div>
                     <div class="form-group" align="center">
                         <input type="number"
+                               id="Carbs"
                                class="form-control"
                                placeholder="Carbs"
                                ng-model="formData.Carbs"
@@ -38,6 +41,7 @@
                     </div>
                     <div class="form-group" align="center">
                         <input type="number"
+                               id="numMeals"
                                class="form-control"
                                placeholder="Meal Number"
                                ng-model="formData.numMeals"
@@ -46,6 +50,7 @@
                     </div>
                     <div class="form-group" align="center">
                         <input type="text"
+                               id="MealType"
                                class="form-control"
                                placeholder="Meal Type"
                                ng-model="formData.MealType"
@@ -54,6 +59,7 @@
                     </div>
                     <div class="form-group" align="center">
                         <input type="number"
+                               id="MealCalories"
                                class="form-control"
                                placeholder="Meal Calories"
                                ng-model="formData.MealCalories"
@@ -62,6 +68,7 @@
                     </div>
                     <div class="form-group" align="center">
                         <input type="number"
+                               id="MealTime"
                                class="form-control"
                                placeholder="Meal Time"
                                ng-model="formData.MealTime"
@@ -69,7 +76,7 @@
                                step=".02"
                                required="true">
                     </div>
-                    <button type="button" class="btn btn-default" ng-click="updateDiet()">
+                    <button type="button" id="submit" class="btn btn-default" ng-click="updateDiet()">
                         Update
                     </button>
                 </form>

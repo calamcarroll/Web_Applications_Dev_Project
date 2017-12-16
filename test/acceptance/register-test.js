@@ -107,43 +107,6 @@ test.describe('Register Page', function() {
             .then(function(element) {
                 element.sendKeys('12345');
             } )
-        var input = driver.findElement(By.id('Weight'));
-        input
-            .then(function() {
-                return driver.findElement(By.id('Weight'));
-            })
-            .then(function(element) {
-                element.clear();
-                return element;
-            } )
-            .then(function(element) {
-                element.sendKeys('100');
-            } )
-        var input = driver.findElement(By.id('Height'));
-        input
-            .then(function() {
-                return driver.findElement(By.id('Height'));
-            })
-            .then(function(element) {
-                element.clear();
-                return element;
-            } )
-            .then(function(element) {
-                element.sendKeys('107');
-            } )
-
-        var input = driver.findElement(By.id('BodyFat'));
-        input
-            .then(function() {
-                return driver.findElement(By.id('BodyFat'));
-            })
-            .then(function(element) {
-                element.clear();
-                return element;
-            } )
-            .then(function(element) {
-                element.sendKeys('12');
-            } )
 
             .then(function() {
                 return driver.findElement(By.id('submit'));
