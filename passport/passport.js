@@ -3,9 +3,15 @@ var User = require('../models/Users');
 var session = require('express-session');
 module .exports = function (app, passport) {
 
-    // app.use(express.session({secret: 'keyboard cat'}));
+
     app.use(passport.initialize());
     app.use(passport.session());
+    app.use(session({
+        secret: 'keyboard cat',
+        resave: false,
+        saveUninitialized: true,
+        cookie: { secure: false }
+    }))
 
     passport.serializeUser(function(user, done) {
         done(null, user.id);
@@ -24,20 +30,22 @@ module .exports = function (app, passport) {
             profileFields:['id','displayName', 'photos', 'email']
         },
         function(accessToken, refreshToken, profile, done) {
-            // User.findOrCreate(..., function(err, user) {
-            //     if (err) { return done(err); }
-            //     done(null, user);
+        console.log(profile)
+          //todo finished off here
+            // User.findOne({Email: profile._json.email}).select('Username, Password, Email').exec(function (err, user) {
+            //    if(err) done(err);
+            //     if(user && user != null){
+            //         done(null, user);
+            //     }else
+            //         done(err);
             // });
             done(null,profile)
         }
     ));
-    app.get('/auth/facebook/callback',
-        passport.authenticate('facebook', {
-            failureRedirect: '/login' }));
+    app.get('/auth/facebook/callback', passport.authenticate('facebook', {failureRedirect: '/login' }));
 
 
-    app.get('/auth/facebook',
-        passport.authenticate('facebook', { scope: 'read_stream' })
+    app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' })
     );
 
     return passport;
